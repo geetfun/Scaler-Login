@@ -2,6 +2,23 @@ require 'test/test_helper'
 
 class AuthenticateTest < ActiveSupport::TestCase
   
+  context "class object" do
+    should "have 'authenticate' class method" do
+      assert User.respond_to? :authenticate
+    end
+  end
+  
+  context "instance object" do
+    setup do
+      @user = User.new
+    end
+    subject { @user }
+    
+    should "have a :password_confirmation field" do
+      assert @user.respond_to? :password_confirmation=
+    end
+  end
+  
   context "validating user" do
     setup do
       @user = Factory.create(:user)
@@ -17,4 +34,4 @@ class AuthenticateTest < ActiveSupport::TestCase
     end
   end # context
   
-end
+end # AuthenticateTest

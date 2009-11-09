@@ -1,5 +1,5 @@
-require File.dirname(__FILE__) + "/scaler_login/models/authenticate"
-require File.dirname(__FILE__) + "/scaler_login/models/base"
+require File.dirname(__FILE__) + "/scaler_login/cryptography"              # Cryptography tools
+require File.dirname(__FILE__) + "/scaler_login/models/base"  # ScalerLogin Strategies
 
 module ScalerLogin
   # Learned a lot from Devise

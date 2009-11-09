@@ -5,6 +5,9 @@ module ScalerLogin
       def self.included(base)
         base.class_eval do
           extend ClassMethods
+          
+          # Adds a password confirmation field
+          attr_accessor :password_confirmation
         end
       end
     

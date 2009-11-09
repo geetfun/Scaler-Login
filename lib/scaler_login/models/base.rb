@@ -1,3 +1,5 @@
+require File.dirname(__FILE__) + "/authenticate"        # General authentication
+
 module ScalerLogin
   module Models
     module Base
