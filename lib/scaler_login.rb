@@ -1,4 +1,5 @@
-require File.dirname(__FILE__) + "/scaler_login/cryptography"              # Cryptography tools
+require File.dirname(__FILE__) + "/scaler_login/cryptography" # Cryptography tools
+require File.dirname(__FILE__) + "/scaler_login/regex"        # Regex patterns  
 require File.dirname(__FILE__) + "/scaler_login/models/base"  # ScalerLogin Strategies
 
 module ScalerLogin

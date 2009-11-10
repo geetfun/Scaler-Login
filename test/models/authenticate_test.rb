@@ -8,20 +8,9 @@ class AuthenticateTest < ActiveSupport::TestCase
     end
   end
   
-  context "instance object" do
-    setup do
-      @user = User.new
-    end
-    subject { @user }
-    
-    should "have a :password_confirmation field" do
-      assert @user.respond_to? :password_confirmation=
-    end
-  end
-  
   context "validating user" do
     setup do
-      @user = Factory.create(:user)
+      @user = Factory.create(:user) if User.all.length == 0
     end
     subject { @user }
     
@@ -32,6 +21,6 @@ class AuthenticateTest < ActiveSupport::TestCase
     should "return nil if provided invalid email and password" do
       assert_nil User.authenticate(:email => "bogus@spam.com", :password => "bogus123")    
     end
-  end # context
+  end
   
 end # AuthenticateTest

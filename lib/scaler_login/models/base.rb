@@ -1,4 +1,6 @@
 require File.dirname(__FILE__) + "/authenticate"        # General authentication
+require File.dirname(__FILE__) + "/registrate"          # Automatic registration methods
+require File.dirname(__FILE__) + "/validate"            # Validation methods
 
 module ScalerLogin
   module Models
