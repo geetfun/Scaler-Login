@@ -1,3 +1,5 @@
+require File.join(File.dirname(__FILE__), "../strategies/authenticate")        # Authenticate strategies
+
 module ScalerLogin
   module Models
     # nodoc
