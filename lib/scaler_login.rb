@@ -2,8 +2,9 @@
 require File.dirname(__FILE__) + "/scaler_login/version"      # ScalerLogin Version
 require File.dirname(__FILE__) + "/scaler_login/cryptography" # Cryptography tools
 require File.dirname(__FILE__) + "/scaler_login/regex"        # Regex patterns  
-require File.dirname(__FILE__) + "/scaler_login/models/base"  # ScalerLogin Strategies
+
 require File.dirname(__FILE__) + "/scaler_login/warden"       # Warden Framework
+require File.dirname(__FILE__) + "/scaler_login/models/base"  # ScalerLogin Strategies
 require File.dirname(__FILE__) + "/scaler_login/rails"        # Rails Plugin
 
 module ScalerLogin

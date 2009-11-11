@@ -5,4 +5,4 @@ rescue
   require 'warden'
 end
 
-require File.dirname(__FILE__) + "/strategies/base"        # Strategies for Warden
+require File.join(File.dirname(__FILE__), "/strategies/base")        # Strategies for Warden

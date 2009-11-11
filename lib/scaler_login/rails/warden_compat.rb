@@ -11,7 +11,7 @@ module Warden::Mixins::Common
   end
 
   def raw_session
-    request.sessionrails
+    request.session
   end
 
   def reset_session!
